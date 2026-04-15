@@ -1,0 +1,11 @@
+--- TRATAMIENTO DE OUTLIERS (IQR) ---
+
+q1: 35.0000
+q3: 100.0000
+iqr: 65.0000
+limite_inferior: -62.5000
+limite_superior: 197.5000
+outliers_eliminados: 1905
+porcentaje_eliminado: 9.7105
+
+--- INTERPRETACIÓN ---El porcentaje de outliers eliminado es significativo y puede afectar al análisis y al modelado.

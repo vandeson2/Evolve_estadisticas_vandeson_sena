@@ -1,0 +1,167 @@
+--- FRECUENCIA DE VARIABLES CATEGÓRICAS ---
+
+---neighbourhood_group---
+Centro: frecuencia absoluta = 7918,frecuencia relativa = 44.70%
+Salamanca: frecuencia absoluta = 1137,frecuencia relativa = 6.42%
+Chamberí: frecuencia absoluta = 1108,frecuencia relativa = 6.26%
+Arganzuela: frecuencia absoluta = 1043,frecuencia relativa = 5.89%
+Tetuán: frecuencia absoluta = 754,frecuencia relativa = 4.26%
+Carabanchel: frecuencia absoluta = 666,frecuencia relativa = 3.76%
+Retiro: frecuencia absoluta = 606,frecuencia relativa = 3.42%
+Puente de Vallecas: frecuencia absoluta = 588,frecuencia relativa = 3.32%
+Latina: frecuencia absoluta = 578,frecuencia relativa = 3.26%
+Ciudad Lineal: frecuencia absoluta = 577,frecuencia relativa = 3.26%
+Chamartín: frecuencia absoluta = 508,frecuencia relativa = 2.87%
+Moncloa - Aravaca: frecuencia absoluta = 502,frecuencia relativa = 2.83%
+Hortaleza: frecuencia absoluta = 313,frecuencia relativa = 1.77%
+San Blas - Canillejas: frecuencia absoluta = 306,frecuencia relativa = 1.73%
+Fuencarral - El Pardo: frecuencia absoluta = 277,frecuencia relativa = 1.56%
+Usera: frecuencia absoluta = 266,frecuencia relativa = 1.50%
+Villaverde: frecuencia absoluta = 163,frecuencia relativa = 0.92%
+Barajas: frecuencia absoluta = 152,frecuencia relativa = 0.86%
+Moratalaz: frecuencia absoluta = 106,frecuencia relativa = 0.60%
+Villa de Vallecas: frecuencia absoluta = 89,frecuencia relativa = 0.50%
+Vicálvaro: frecuencia absoluta = 56,frecuencia relativa = 0.32%
+Categoría dominante: Centro (44.70%)
+Destribución relativamente equilibrada.
+
+---neighbourhood---
+Embajadores: frecuencia absoluta = 2142,frecuencia relativa = 12.09%
+Universidad: frecuencia absoluta = 1724,frecuencia relativa = 9.73%
+Palacio: frecuencia absoluta = 1384,frecuencia relativa = 7.81%
+Sol: frecuencia absoluta = 1017,frecuencia relativa = 5.74%
+Justicia: frecuencia absoluta = 868,frecuencia relativa = 4.90%
+Cortes: frecuencia absoluta = 783,frecuencia relativa = 4.42%
+Trafalgar: frecuencia absoluta = 323,frecuencia relativa = 1.82%
+Palos de Moguer: frecuencia absoluta = 322,frecuencia relativa = 1.82%
+Puerta del Angel: frecuencia absoluta = 264,frecuencia relativa = 1.49%
+Goya: frecuencia absoluta = 261,frecuencia relativa = 1.47%
+Argüelles: frecuencia absoluta = 253,frecuencia relativa = 1.43%
+Guindalera: frecuencia absoluta = 236,frecuencia relativa = 1.33%
+San Diego: frecuencia absoluta = 211,frecuencia relativa = 1.19%
+Recoletos: frecuencia absoluta = 207,frecuencia relativa = 1.17%
+Delicias: frecuencia absoluta = 205,frecuencia relativa = 1.16%
+Arapiles: frecuencia absoluta = 201,frecuencia relativa = 1.13%
+Pacífico: frecuencia absoluta = 200,frecuencia relativa = 1.13%
+Gaztambide: frecuencia absoluta = 194,frecuencia relativa = 1.10%
+Cuatro Caminos: frecuencia absoluta = 193,frecuencia relativa = 1.09%
+Numancia: frecuencia absoluta = 177,frecuencia relativa = 1.00%
+Ibiza: frecuencia absoluta = 170,frecuencia relativa = 0.96%
+Castellana: frecuencia absoluta = 163,frecuencia relativa = 0.92%
+Rios Rosas: frecuencia absoluta = 162,frecuencia relativa = 0.91%
+Lista: frecuencia absoluta = 159,frecuencia relativa = 0.90%
+Ventas: frecuencia absoluta = 159,frecuencia relativa = 0.90%
+Acacias: frecuencia absoluta = 158,frecuencia relativa = 0.89%
+Prosperidad: frecuencia absoluta = 153,frecuencia relativa = 0.86%
+San Isidro: frecuencia absoluta = 152,frecuencia relativa = 0.86%
+Almagro: frecuencia absoluta = 150,frecuencia relativa = 0.85%
+Bellas Vistas: frecuencia absoluta = 146,frecuencia relativa = 0.82%
+Chopera: frecuencia absoluta = 144,frecuencia relativa = 0.81%
+Imperial: frecuencia absoluta = 135,frecuencia relativa = 0.76%
+Pueblo Nuevo: frecuencia absoluta = 134,frecuencia relativa = 0.76%
+Castillejos: frecuencia absoluta = 127,frecuencia relativa = 0.72%
+Vista Alegre: frecuencia absoluta = 117,frecuencia relativa = 0.66%
+Opañel: frecuencia absoluta = 114,frecuencia relativa = 0.64%
+Fuente del Berro: frecuencia absoluta = 111,frecuencia relativa = 0.63%
+Valdeacederas: frecuencia absoluta = 106,frecuencia relativa = 0.60%
+Quintana: frecuencia absoluta = 103,frecuencia relativa = 0.58%
+Berruguete: frecuencia absoluta = 100,frecuencia relativa = 0.56%
+Comillas: frecuencia absoluta = 98,frecuencia relativa = 0.55%
+Jerónimos: frecuencia absoluta = 93,frecuencia relativa = 0.53%
+Valverde: frecuencia absoluta = 91,frecuencia relativa = 0.51%
+Adelfas: frecuencia absoluta = 91,frecuencia relativa = 0.51%
+Aluche: frecuencia absoluta = 90,frecuencia relativa = 0.51%
+Canillas: frecuencia absoluta = 88,frecuencia relativa = 0.50%
+Casa de Campo: frecuencia absoluta = 85,frecuencia relativa = 0.48%
+Moscardó: frecuencia absoluta = 84,frecuencia relativa = 0.47%
+Puerta Bonita: frecuencia absoluta = 83,frecuencia relativa = 0.47%
+Almenara: frecuencia absoluta = 82,frecuencia relativa = 0.46%
+Pinar del Rey: frecuencia absoluta = 82,frecuencia relativa = 0.46%
+Casco Histórico de Vallecas: frecuencia absoluta = 81,frecuencia relativa = 0.46%
+Valdefuentes: frecuencia absoluta = 80,frecuencia relativa = 0.45%
+Ciudad Jardín: frecuencia absoluta = 79,frecuencia relativa = 0.45%
+Lucero: frecuencia absoluta = 79,frecuencia relativa = 0.45%
+Hispanoamérica: frecuencia absoluta = 78,frecuencia relativa = 0.44%
+Vallehermoso: frecuencia absoluta = 78,frecuencia relativa = 0.44%
+Simancas: frecuencia absoluta = 78,frecuencia relativa = 0.44%
+El Viso: frecuencia absoluta = 76,frecuencia relativa = 0.43%
+Palomeras Bajas: frecuencia absoluta = 73,frecuencia relativa = 0.41%
+Concepción: frecuencia absoluta = 72,frecuencia relativa = 0.41%
+Rejas: frecuencia absoluta = 70,frecuencia relativa = 0.40%
+Ciudad Universitaria: frecuencia absoluta = 69,frecuencia relativa = 0.39%
+Nueva España: frecuencia absoluta = 63,frecuencia relativa = 0.36%
+Castilla: frecuencia absoluta = 59,frecuencia relativa = 0.33%
+Cármenes: frecuencia absoluta = 57,frecuencia relativa = 0.32%
+Pilar: frecuencia absoluta = 57,frecuencia relativa = 0.32%
+Los Rosales: frecuencia absoluta = 56,frecuencia relativa = 0.32%
+Buenavista: frecuencia absoluta = 56,frecuencia relativa = 0.32%
+Timón: frecuencia absoluta = 54,frecuencia relativa = 0.30%
+Almendrales: frecuencia absoluta = 54,frecuencia relativa = 0.30%
+Legazpi: frecuencia absoluta = 52,frecuencia relativa = 0.29%
+Peñagrande: frecuencia absoluta = 49,frecuencia relativa = 0.28%
+Aguilas: frecuencia absoluta = 49,frecuencia relativa = 0.28%
+Valdezarza: frecuencia absoluta = 48,frecuencia relativa = 0.27%
+Entrevías: frecuencia absoluta = 47,frecuencia relativa = 0.27%
+Abrantes: frecuencia absoluta = 46,frecuencia relativa = 0.26%
+Palomeras Sureste: frecuencia absoluta = 43,frecuencia relativa = 0.24%
+San Andrés: frecuencia absoluta = 41,frecuencia relativa = 0.23%
+Fontarrón: frecuencia absoluta = 41,frecuencia relativa = 0.23%
+Casco Histórico de Vicálvaro: frecuencia absoluta = 40,frecuencia relativa = 0.23%
+Rosas: frecuencia absoluta = 39,frecuencia relativa = 0.22%
+Alameda de Osuna: frecuencia absoluta = 38,frecuencia relativa = 0.21%
+Canillejas: frecuencia absoluta = 38,frecuencia relativa = 0.21%
+Arcos: frecuencia absoluta = 37,frecuencia relativa = 0.21%
+Aravaca: frecuencia absoluta = 37,frecuencia relativa = 0.21%
+Portazgo: frecuencia absoluta = 37,frecuencia relativa = 0.21%
+Casco Histórico de Barajas: frecuencia absoluta = 36,frecuencia relativa = 0.20%
+Costillares: frecuencia absoluta = 36,frecuencia relativa = 0.20%
+Mirasierra: frecuencia absoluta = 34,frecuencia relativa = 0.19%
+Niño Jesús: frecuencia absoluta = 32,frecuencia relativa = 0.18%
+San Pascual: frecuencia absoluta = 32,frecuencia relativa = 0.18%
+Pradolongo: frecuencia absoluta = 32,frecuencia relativa = 0.18%
+Los Angeles: frecuencia absoluta = 30,frecuencia relativa = 0.17%
+Orcasur: frecuencia absoluta = 29,frecuencia relativa = 0.16%
+San Fermín: frecuencia absoluta = 28,frecuencia relativa = 0.16%
+Atocha: frecuencia absoluta = 27,frecuencia relativa = 0.15%
+La Paz: frecuencia absoluta = 26,frecuencia relativa = 0.15%
+San Juan Bautista: frecuencia absoluta = 26,frecuencia relativa = 0.15%
+Zofío: frecuencia absoluta = 25,frecuencia relativa = 0.14%
+Piovera: frecuencia absoluta = 23,frecuencia relativa = 0.13%
+Campamento: frecuencia absoluta = 23,frecuencia relativa = 0.13%
+Palomas: frecuencia absoluta = 22,frecuencia relativa = 0.12%
+Media Legua: frecuencia absoluta = 22,frecuencia relativa = 0.12%
+Salvador: frecuencia absoluta = 20,frecuencia relativa = 0.11%
+Estrella: frecuencia absoluta = 20,frecuencia relativa = 0.11%
+San Cristobal: frecuencia absoluta = 19,frecuencia relativa = 0.11%
+Marroquina: frecuencia absoluta = 18,frecuencia relativa = 0.10%
+Apostol Santiago: frecuencia absoluta = 18,frecuencia relativa = 0.10%
+Butarque: frecuencia absoluta = 17,frecuencia relativa = 0.10%
+Cuatro Vientos: frecuencia absoluta = 16,frecuencia relativa = 0.09%
+Ambroz: frecuencia absoluta = 16,frecuencia relativa = 0.09%
+Vinateros: frecuencia absoluta = 16,frecuencia relativa = 0.09%
+Colina: frecuencia absoluta = 14,frecuencia relativa = 0.08%
+Orcasitas: frecuencia absoluta = 14,frecuencia relativa = 0.08%
+El Goloso: frecuencia absoluta = 13,frecuencia relativa = 0.07%
+Hellín: frecuencia absoluta = 13,frecuencia relativa = 0.07%
+Corralejos: frecuencia absoluta = 13,frecuencia relativa = 0.07%
+Aeropuerto: frecuencia absoluta = 11,frecuencia relativa = 0.06%
+Amposta: frecuencia absoluta = 11,frecuencia relativa = 0.06%
+Santa Eugenia: frecuencia absoluta = 8,frecuencia relativa = 0.05%
+Pavones: frecuencia absoluta = 7,frecuencia relativa = 0.04%
+Valdemarín: frecuencia absoluta = 5,frecuencia relativa = 0.03%
+Fuentelareina: frecuencia absoluta = 5,frecuencia relativa = 0.03%
+El Plantío: frecuencia absoluta = 5,frecuencia relativa = 0.03%
+El Pardo: frecuencia absoluta = 2,frecuencia relativa = 0.01%
+Horcajo: frecuencia absoluta = 2,frecuencia relativa = 0.01%
+Atalaya: frecuencia absoluta = 1,frecuencia relativa = 0.01%
+Categoría dominante: Embajadores (12.09%)
+Destribución relativamente equilibrada.
+
+---room_type---
+Entire home/apt: frecuencia absoluta = 10085,frecuencia relativa = 56.94%
+Private room: frecuencia absoluta = 7200,frecuencia relativa = 40.65%
+Shared room: frecuencia absoluta = 294,frecuencia relativa = 1.66%
+Hotel room: frecuencia absoluta = 134,frecuencia relativa = 0.76%
+Categoría dominante: Entire home/apt (56.94%)
+Destribución relativamente equilibrada.
+

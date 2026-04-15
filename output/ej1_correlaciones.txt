@@ -1,0 +1,13 @@
+--- TOP 3 VARIABLES MÁS CORRELACIONADAS CON LA VARIABLE OBJETIVO ---
+calculated_host_listings_count: 0.2052
+latitude: 0.0907
+availability_365: 0.0554
+
+--- INTERPRETACIÓN ---
+calculated_host_listings_count: correlación débil con la variable objetivo.
+latitude: correlación débil con la variable objetivo.
+availability_365: correlación débil con la variable objetivo.
+
+--- POSIBLES CASOS DE MULTICOLINEALIDAD (|r| > 0.9) ---
+
+No se detectaron pares con |r| > 0.9.

@@ -1,0 +1,65 @@
+----  RESUMEN ESTRUCTURAL DEL DATASET ---
+
+Filas originales: 19618 
+Columnas originales: 16 
+Tamaño en momeria mb: 8.65 MB 
+
+
+----TIPOS DE DATOS POR COLUMNA ----
+-id: int64
+-name: str
+-host_id: int64
+-host_name: str
+-neighbourhood_group: str
+-neighbourhood: str
+-latitude: float64
+-longitude: float64
+-room_type: str
+-price: int64
+-minimum_nights: int64
+-number_of_reviews: int64
+-last_review: str
+-reviews_per_month: float64
+-calculated_host_listings_count: int64
+-availability_365: int64
+
+---- PORCENTAJES DE NULOS POR COLUMNAS ----
+-last_review: 28.73% 
+-reviews_per_month: 28.73% 
+-host_name: 2.69% 
+-name: 0.02% 
+-neighbourhood_group: 0.00% 
+-neighbourhood: 0.00% 
+-id: 0.00% 
+-host_id: 0.00% 
+-longitude: 0.00% 
+-latitude: 0.00% 
+-room_type: 0.00% 
+-price: 0.00% 
+-number_of_reviews: 0.00% 
+-minimum_nights: 0.00% 
+-calculated_host_listings_count: 0.00% 
+-availability_365: 0.00% 
+
+---- DECISIONES DE LIMPIEZA ----
+-Eliminación de variables de id y texto que no son útiles como 'id', 'name', 'host_id', 'host_name'.
+-Se ha eliminado la variable de fecha 'last_review' puesto que contenia muchos nulos.
+-En la variable 'reviews_per_month' se sustituyen los nulos por 0.
+-Converción de variables tipo texto a 'category' para un mejor rendimiento.
+
+---- RESUMEN DATASET LIMPIO ----
+Filas: 17713
+Columnas: 11
+Tamaño en memoria MB: 4.290051460266113
+---- Porcentajes de nulos ---
+-neighbourhood_group: 0.00% 
+-neighbourhood: 0.00% 
+-latitude: 0.00% 
+-longitude: 0.00% 
+-room_type: 0.00% 
+-price: 0.00% 
+-minimum_nights: 0.00% 
+-number_of_reviews: 0.00% 
+-reviews_per_month: 0.00% 
+-calculated_host_listings_count: 0.00% 
+-availability_365: 0.00% 
