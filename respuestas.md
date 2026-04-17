@@ -62,17 +62,14 @@ El dataset presenta características típicas de datos reales, como distribucion
 El precio muestra una alta variabilidad y una distribución sesgada, lo que será necesario aplicar modelo robustos para su predicción.
 Las correlaciones débiles indican que el precio depende de múltiples factores, lo que refuerza la necesidad de utilizar modelos multivariantes.
 El tratamiento de valores nulos y outlieres permite mejorar la calidad del dataset y evitar que valores extremos o datos incompletos afecten negativamente al modelado.
----
 
 ## Ejercicio 2 — Inferencia con Scikit-Learn
 
----
 En este ejercicio se ha aplicado un modelo de regresión lineal utilizando la librería Scikit-Learn con el objetivo de predecir la variable 'price' apartir del resto de variables del dataset. En primer lugar, se ha realizado un preprocesamiento de los datos, S e han eliminadovariables identificativas y textuales que no aportan valor predictivo, como 'id', 'name', 'host_id', 'host_name' y 'last_review'. Además, los valores nulos de 'reviews_por_month' se han reemplazado por 0.
 Las variables categóricas ('neighbourhood', 'neighbourhood' y 'room_type') se han transformado mediante OneHotEncoder, mientras que las variables numéricas se han escalado utilizando StandardScaler. Este proceso permite que el modelo trate correctamente las variables y evita sesgo debido a diferentes escalas.
 Posteriormente, el dataset se ha dividido en conjunto de entrenamiento y test con una proporción 80/20 y 'random_state=42'. 
 A continuación, se ha entrenadi un modelo de regresión lineal mediante un Pipeline, integrandi el preprocesamiento y el modelo en un único flujo.
 Finalmente , se ha evaluado el modelo utilizando las métricas MAE, RMSE y R2, lo que permite analizar su capacidad predicativa y detectar sus limitaciones.  
----
 
 **Pregunta 2.1** — Indica los valores de MAE, RMSE y R² de la regresión lineal sobre el test set. ¿El modelo funciona bien? ¿Por qué?
 
@@ -115,8 +112,6 @@ La columna de unos es fundamental para estimar el interceptor. Sin esa columna, 
 | β₂        | -1.0      |                |
 | β₃        | 0.5       |                |
 
-Regresión Lineal Múltiple — Coeficientes ajustados
-==================================================
   Intercepto (β₀): 4.864995
   β1 (feature 1): 2.063618
   β2 (feature 2): -1.117038
@@ -130,9 +125,10 @@ Coeficientes reales de referencia:
 
 
 **Pregunta 3.3** — ¿Qué valores de MAE, RMSE y R² has obtenido? ¿Se aproximan a los de referencia?
- MAE  : 1.166462
- RMSE : 1.461243
- R²   : 0.689672
+
+- MAE  : 1.166462
+- RMSE : 1.461243
+- R²   : 0.689672
 
 - El valore del MAE hay un error medio de aproximadamente 1.17 unidades, lo que representa un buen ajuste.
 - El RMSE, es ligeramente superior al MAE, indica que no existen errores extremadamente grandes.
