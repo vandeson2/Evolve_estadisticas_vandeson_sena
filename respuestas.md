@@ -94,13 +94,17 @@ En conclisión, la regresión lineal no es adecuada para este problema y seria n
 ## Ejercicio 3 — Regresión Lineal Múltiple en NumPy
 
 ---
-Añade aqui tu descripción y analisis:
+En este ejercicio se ha implementado desde cero un modelo de regresión lineal múltiple utilizando NumPy y la solución analitica de Mínimos Cuadrado Ordinarios.
+El objetivo ha sido calcular los coeficientes del modelo mediante la fórmula mmatricial y evaluar su rendimiento utilizando métricas como MAE, RMSE y R2. Además, se ha analizado la capacidad del modelo para aproximar los coeficientes reales del sistema generendor de datos.
 
 ---
 
 **Pregunta 3.1** — Explica en tus propias palabras qué hace la fórmula β = (XᵀX)⁻¹ Xᵀy y por qué es necesario añadir una columna de unos a la matriz X.
 
-> _Escribe aquí tu respuesta_
+La fórmula β = (XᵀX)⁻¹ Xᵀy es la forma directa para resolver una regresión lineal de un solo golpe. En lugar de entrenar el modelo por pasos, usa álgebra matricial para encontrar los coeficientes exactos que dan el menor error posible.
+β representa los pesos o coeficientes óptimos. Es la combinación matemática que mejor se ajusta. 
+La columna de unos es fundamental para estimar el interceptor. Sin esa columna, obligas al modelo a pasar siempre por (0,0), lo que arruinaría la prediccción en casi cualquier escenario real, ya que casi nunca se empieza por 0. Esta columna permite que la línea flote.
+
 
 **Pregunta 3.2** — Copia aquí los cuatro coeficientes ajustados por tu función y compáralos con los valores de referencia del enunciado.
 
@@ -130,12 +134,12 @@ Coeficientes reales de referencia:
  RMSE : 1.461243
  R²   : 0.689672
 
-- El valore del MAE hay un error medio de aproximadamente 
+- El valore del MAE hay un error medio de aproximadamente 1.17 unidades, lo que representa un buen ajuste.
+- El RMSE, es ligeramente superior al MAE, indica que no existen errores extremadamente grandes.
+- El R2 muestra que el modelo es capaz de explicar aproximadamente el 69% de la variabilidad de la varible objetivo. Aunque es un valor algo inferior al esperado.
 
+Las métricas obtenidas se aproximan a las referencias del enunciado, lo que valida tanto la implementación del modelo como su capacidad para capturar la relación entre variables.
 
-**Pregunta 3.4* — Compara los resultados con la reacción logística anterior para tu dataset y comprueba si el resultado es parecido. Explica qué ha sucedido. 
-
-> _Escribe aquí tu respuesta_
 
 ---
 

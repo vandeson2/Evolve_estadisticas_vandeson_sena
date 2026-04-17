@@ -190,19 +190,15 @@ def graficar_real_vs_predicho(y_real, y_pred, ruta_salida="output/ej3_prediccion
     #   - Dibuja la línea de referencia perfecta: y = x
     #   - Añade etiquetas a los ejes y título
     #   - Guarda con plt.savefig(ruta_salida, dpi=150, bbox_inches='tight')
-    plt.figure(figsize=(10, 6))
+    minimo =  min(np.min(y_real), np.min(y_pred))
+    maximo = max(np.max(y_real), np.max(y_pred))
+    
+    plt.figure(figsize=(10,6))
     plt.scatter(y_real, y_pred, alpha=0.6)
-    
-    # Línea de referencia perfecta (y=x)
-    min_val = min(y_real.min(), y_pred.min())
-    max_val = max(y_real.max(), y_pred.max())
-    plt.plot([min_val, max_val], [min_val, max_val], 'r--', lw=2, label='Predicción perfecta')
-    
-    plt.title("Valores Reales vs Valores Predichos")
+    plt.plot([minimo, maximo], [minimo, maximo], linestyle="--")
+    plt.title("Valores Reales vs Valores Predichos.")
     plt.xlabel("Valores reales")
     plt.ylabel("Predicciones")
-    plt.legend()
-    plt.grid(True, alpha=0.3)
     plt.tight_layout()
     plt.savefig(ruta_salida, dpi=300, bbox_inches="tight")
     plt.close()
