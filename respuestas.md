@@ -111,11 +111,27 @@ Añade aqui tu descripción y analisis:
 | β₂        | -1.0      |                |
 | β₃        | 0.5       |                |
 
-> _Escribe aquí tu respuesta_
+Regresión Lineal Múltiple — Coeficientes ajustados
+==================================================
+  Intercepto (β₀): 4.864995
+  β1 (feature 1): 2.063618
+  β2 (feature 2): -1.117038
+  β3 (feature 3): 0.438517
+
+Coeficientes reales de referencia:
+  Intercepto (β₀): 5.000000
+  β1 (feature 1): 2.000000
+  β2 (feature 2): -1.000000
+  β3 (feature 3): 0.500000
+
 
 **Pregunta 3.3** — ¿Qué valores de MAE, RMSE y R² has obtenido? ¿Se aproximan a los de referencia?
+ MAE  : 1.166462
+ RMSE : 1.461243
+ R²   : 0.689672
 
-> _Escribe aquí tu respuesta_
+- El valore del MAE hay un error medio de aproximadamente 
+
 
 **Pregunta 3.4* — Compara los resultados con la reacción logística anterior para tu dataset y comprueba si el resultado es parecido. Explica qué ha sucedido. 
 
