@@ -1,0 +1,12 @@
+ANÁLISIS DEL RESIDUO
+
+Media: 0.127078
+Desviación típica: 3.222043
+Asimetría: -0.050917
+Curtosis: -0.061028
+Jarque-Bera estadístico: 1.101349
+Jarque-Bera p-value: 0.576561
+Normalidad: no se rechaza la hipóteis de normalidad.
+ADF estadístico: -39.916048
+ADF p-value: 0.000000
+Estacionariedad: el residuo puede considerarse estacionario.

@@ -39,6 +39,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
+from statsmodels.tsa.seasonal import seasonal_decompose
+from scipy.stats import jarque_bera, norm
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+from statsmodels.tsa.stattools import adfuller
+
 
 # Crear carpeta de salida si no existe
 os.makedirs("output", exist_ok=True)
@@ -114,8 +119,17 @@ def visualizar_serie(serie):
     - Añade título, etiquetas de ejes y una cuadrícula suave
     - Guarda con plt.savefig("output/ej4_serie_original.png", dpi=150, bbox_inches='tight')
     """
-    # TODO: Implementa la visualización de la serie
-    pass
+
+    fig, ax = plt.subplots(figsize=(14, 4))
+    ax.plot(serie.index, serie.values, linewidth=1, label="Serie Temporal")
+    ax.set_title("Visualización de la Serie Temporal (2018-2023)")
+    ax.set_xlabel("Fecha")
+    ax.set_ylabel("Valor")
+    ax.grid(True, linestyle="--", alpha=0.6)
+    plt.savefig("output/ej4_serie_original.png", dpi=150, bbox_inches="tight")
+
+
+    
 
 
 # =============================================================================
@@ -148,8 +162,12 @@ def descomponer_serie(serie):
     # resultado = seasonal_decompose(...)
     # fig = resultado.plot()
     # ...
-    pass
+    resultado = seasonal_decompose(serie, model='additive', period=365)
+    fig = resultado.plot()
+    fig.set_size_inches(12, 10)
+    fig.savefig("output/ej4_descomposicion.png", dpi=150, bbox_inches='tight')
 
+    return resultado
 
 # =============================================================================
 # TAREA 3 — Análisis del residuo (ruido)
@@ -187,30 +205,70 @@ def analizar_residuo(residuo):
         from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
     """
     # TODO: Limpia el residuo (elimina NaN al inicio/fin)
-    residuo_limpio = None  # ← residuo.dropna()
+    residuo_limpio = residuo.dropna()
 
     # TODO: Calcula estadísticos básicos
-    media    = None
-    std      = None
-    asimetria = None
-    curtosis  = None
+    media    = residuo_limpio.mean()
+    std      = residuo_limpio.std()
+    asimetria = residuo_limpio.skew()
+    curtosis  = residuo_limpio.kurtosis()
 
 
     # TODO: Test de estacionariedad (ADF)
-    # from statsmodels.tsa.stattools import adfuller
-    # resultado_adf = adfuller(residuo_limpio)
-    # p_adf = resultado_adf[1]
+    resultado_adf = adfuller(residuo_limpio, maxlag=20, autolag="AIC")
+    adf_stat = resultado_adf[0]
+    p_adf = resultado_adf[1]
+
+    jb_stat, p_jb = jarque_bera(residuo_limpio)
 
     # TODO: Gráfico ACF y PACF del residuo → output/ej4_acf_pacf.png
-    pass
+    fig, axes = plt.subplots(1, 2, figsize=(15, 4))
+    plot_acf(residuo_limpio, ax=axes[0])
+    axes[0].set_title("ACF del Residuo")
+    plot_pacf(residuo_limpio, ax=axes[1])
+    axes[1].set_title("PACF del Residuo")
+    plt.tight_layout()
+    plt.savefig("output/ej4_acf_pacf.png", dpi=150, bbox_inches="tight")
+    plt.close()
 
     # TODO: Histograma del residuo con curva normal superpuesta
     # → output/ej4_histograma_ruido.png
     # Pista: usa scipy.stats.norm.pdf para la curva teórica
-    pass
+    plt.figure(figsize=(8, 5))
+    plt.hist(residuo_limpio, bins=30, density=True, alpha=0.6)
+
+    x = np.linspace(residuo_limpio.min(), residuo_limpio.max(), 200)
+    y = norm.pdf(x, loc=media, scale=std)
+    plt.plot(x, y, linewidth=2)
+
+    plt.title("Histograma del Residuo con Curva Normal")
+    plt.xlabel("Residuo")
+    plt.ylabel("Densidad")
+    plt.tight_layout()
+    plt.savefig("output/ej4_histograma_ruido.png", dpi=150, bbox_inches="tight")
+    plt.close()
 
     # TODO: Guardar estadísticos en output/ej4_analisis.txt
-    pass
+    with open("output/ej4_analisis.txt", "w", encoding="utf-8") as f:
+        f.write("ANÁLISIS DEL RESIDUO\n\n")
+        f.write(f"Media: {media:.6f}\n")
+        f.write(f"Desviación típica: {std:.6f}\n")
+        f.write(f"Asimetría: {asimetria:.6f}\n")
+        f.write(f"Curtosis: {curtosis:.6f}\n")
+       
+        f.write(f"Jarque-Bera estadístico: {jb_stat:.6f}\n")
+        f.write(f"Jarque-Bera p-value: {p_jb:.6f}\n")
+        if p_jb > 0.5:
+            f.write("Normalidad: no se rechaza la hipóteis de normalidad.\n")
+        else:
+           f.write("Normalidad: se rechaza la hipóteis de normalidad.\n") 
+        
+        f.write(f"ADF estadístico: {adf_stat:.6f}\n")
+        f.write(f"ADF p-value: {p_adf:.6f}\n")
+        if p_adf < 0.05:
+            f.write("Estacionariedad: el residuo puede considerarse estacionario.\n")
+        else:
+            f.write("Estacionariedad: no se puede afirmar que el residuo sea estacionario.\n")
 
 
 # =============================================================================

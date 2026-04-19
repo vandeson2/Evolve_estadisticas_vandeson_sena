@@ -141,25 +141,31 @@ Las métricas obtenidas se aproximan a las referencias del enunciado, lo que val
 
 ## Ejercicio 4 — Series Temporales
 ---
-Añade aqui tu descripción y analisis:
+Se ha analizado una serie temporal sintética con datos diarios entre 2018 y 2023. A partir de su descomposición en tendencias, estacionalidad y residuo, se ha estudiado el comportamiento de cadacomponente.
+La serie presenta una tendencia creciente, una estacionalidad anual bien definida y un residuo que se comportacomo ruido aleatorio. El análisis estadístico del residuo confirma que cumpe las propiedadesde un ruido gaussiano, lo que indica que la composición ha sido adecuada.
 
 ---
 
 **Pregunta 4.1** — ¿La serie presenta tendencia? Descríbela brevemente (tipo, dirección, magnitud aproximada).
 
-> _Escribe aquí tu respuesta_
+Si, la serie presenta una tendencia creciente de tipo lineal. A lo largo del periodo analizado, los valores aumentan de forma progresiva desde aproximadamente 50 hasta valores cercanos a 170. Esto indica una tendencia positiva sostenida en el tiempo, con una magnitud significativa.
 
-**Pregunta 4.2** — ¿Hay estacionalidad? Indica el periodo aproximado en días y la amplitud del patrón estacional.
-
-> _Escribe aquí tu respuesta_
+**Pregunta 4.2** — ¿Hay estacionalidad? Indica el periodo aproximado en días y la amplitud del patrón estacional
+Si, la serie presenta una clara estacionalidad.
+El periodo es aproximadamente de 365 días, lo que indica una estacionalidad anual. 
+La amplitud del patrón estacional se sitúa aproximadamente entre -20 y +10 unidades, lo que supone una variación total cercana a 30 unidades.
 
 **Pregunta 4.3** — ¿Se aprecian ciclos de largo plazo en la serie? ¿Cómo los diferencias de la tendencia?
 
-> _Escribe aquí tu respuesta_
+Si, se aprecian ciclos de largo plazo en la serie.
+Estos ciclos manifestan como oscilaciones más suaves y de mayor duración que la estacionalidad, y se superponen a la tendebcua creciente. A diferencia de la tendencia, que es un cambio sistematico y sostenido en una dirección, los ciclos presentas subidas y bajadas a largo plazo sun una dirección fija.
 
 **Pregunta 4.4** — ¿El residuo se ajusta a un ruido ideal? Indica la media, la desviación típica y el resultado del test de normalidad (p-value) para justificar tu respuesta.
 
-> _Escribe aquí tu respuesta_
+Si, el residuo se ajusta a un ruido ideal.
+La media del residuo es aproximadamente 0.127, muy cercana a cero, y la desviación es de 3.22, lo que indica una variabilidad moderada y consistente con un ruido gaussiano.
+El test de normalidad Jarque-Bera arroja un p-value de 0.576, po lo que no se rechaza la hipótesis de normalidad. Además, el análisis gráfico( hisograma, ACF y PACF) muestra que el residuo es simétrico, no presente autocorrelación y es estacionario.
+En conjunto, estos resultados indican que el residuo se comporta como ruido blanco gaussiano.
 
 ---
 
